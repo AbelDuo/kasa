@@ -13,6 +13,7 @@ const Apropos = () => {
         <Header />
         <main className="main">
           <Banner imageSrc={aboutBanner} text="" />
+          
         <Footer />
         </main>    
     </>
