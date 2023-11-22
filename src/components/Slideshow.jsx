@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import arrowNext from "../assets/images/arrow_forward.png";
 import arrowPrev from "../assets/images/arrow_back.png";
+import "../styles/Slideshow.scss";
 
 
 const Slideshow = ({ images }) => {
@@ -23,8 +24,8 @@ const Slideshow = ({ images }) => {
 
       {length > 1 && ( // Condition pour afficher le compteur et les flèches uniquement s'il y a plus d'une image
         <div className="slide-controls">
-          <img src={arrowPrev} onClick={prevImage} className="arrow" alt="Preview icon" />
-          <img src={arrowNext} onClick={nextImage} className="arrow" alt="Next icon" />
+          <img src={arrowPrev} onClick={prevImage} className="prevArrow" alt="Previous icon" />
+          <img src={arrowNext} onClick={nextImage} className="nextArrow" alt="Next icon" />
         </div>
       )}
 

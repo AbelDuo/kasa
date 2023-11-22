@@ -3,8 +3,9 @@
     height: 100%;
     display: flex;
     flex-direction: column;
+
     gap: 1rem;
-    margin: 30px 0;
+    margin: 30px 60px;
   }
   
   .collapse-button {

@@ -1,0 +1,49 @@
+.housing-main {
+    max-width: 95%;
+  
+    margin: 0 100px;
+    position: relative;
+  }
+  
+  .housing-header {
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 0 25px 0;
+  }
+  
+  .housing-error {
+    color: #ff6060;
+    font-size: 40px;
+    font-weight: 500;
+    width: 100%;
+    position: absolute;
+    top: 200%;
+    text-align: center;
+  }
+  .housing-title {
+    color: #ff6060;
+    font-size: 30px;
+  }
+  
+  .housing-location {
+    color: #ff6060;
+    margin-top: 5px;
+    font-weight: 500;
+  }
+  
+  .housing-collapse {
+    display: flex;
+    width: 100%;
+    gap: 2rem;
+  }
+  
+  .collapse {
+    width: 50%;
+    margin-bottom: 40px;
+  }
+  
+  .equipments-content {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+  }
