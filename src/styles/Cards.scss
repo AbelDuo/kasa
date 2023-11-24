@@ -1,0 +1,67 @@
+$card-background: #000;
+$card-gradient-start: rgba(0, 0, 0, 0.7);
+$card-gradient-end: rgba(0, 212, 255, 0);
+
+.card {
+  width: 340px;
+  height: 340px;
+  transition: all 0.2s ease-out;
+
+  &:hover {
+    transform: scale(1.02);
+
+    & .card-title {
+      transform: translateY(1%);
+    }
+  }
+}
+
+.card-link {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 340px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.img-container img {
+  width: 100%;
+  height: 340px;
+  border-radius: 25px;
+  object-fit: cover;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.card-title {
+  bottom: 0;
+  height: 150px;
+  position: absolute;
+  width: 100%;
+  background: $card-background;
+  background: linear-gradient(0deg, $card-gradient-start 13%, $card-gradient-end 70%);
+  border-radius: 25px;
+
+  h2 {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    position: absolute;
+    bottom: 15%;
+    left: 15px;
+    right: 15px;
+  }
+}
+
+@media (max-width:768px){
+  .card{
+    width: 95%;
+    height:95%;
+  }
+  .card-link{
+    height: 540px;
+  }
+  .img-container img{
+    height: 540px;
+  }
+}

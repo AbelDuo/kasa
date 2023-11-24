@@ -20,7 +20,7 @@ const Apropos = () => {
         <Banner imageSrc={aboutBanner} text="" />
         <section className="collapses-container">
           {info.map((collapse) => (
-            <Collapse title={collapse.title} key={collapse.title}>
+            <Collapse width="90%"title={collapse.title} key={collapse.title}>
               <p>{collapse.content}</p>
             </Collapse>
           ))}

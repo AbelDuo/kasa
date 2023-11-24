@@ -20,18 +20,14 @@ const Logement = () => {
     setHousing(selectedHousing);
   }, [id]);
 
-  //Dans le guide des etapes, il est recommandé d'utiliser un composant Navigate ou hook useNavigate en cas d'erreur d'id logement
   if (!housing) {
     return (
       <>
         <Erreur/>
-        {/* <Header />
-        <div className="housing-error">Cette propriété n'existe pas ou n'est plus disponible...</div>; */}
       </>
     );
   }
   const { pictures, rating, tags, description, equipments } = housing;
-  // equivaut a const pictures = housing.pictures
   const {
     host: { name, picture },
   } = housing;

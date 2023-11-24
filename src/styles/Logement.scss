@@ -1,49 +1,85 @@
+$kasacolor: #ff6060;
+$housing-error-font-size: 40px;
+$housing-error-font-weight: 500;
+$housing-title-font-size: 30px;
+$housing-location-margin-top: 5px;
+$housing-location-font-weight: 500;
+$housing-collapse-gap: 2rem;
+$collapse-width: 50%;
+$collapse-margin-bottom: 40px;
+
 .housing-main {
-    max-width: 95%;
-  
-    margin: 0 100px;
-    position: relative;
-  }
-  
-  .housing-header {
-    display: flex;
-    justify-content: space-between;
-    margin: 25px 0 25px 0;
-  }
-  
-  .housing-error {
-    color: #ff6060;
-    font-size: 40px;
-    font-weight: 500;
-    width: 100%;
-    position: absolute;
-    top: 200%;
-    text-align: center;
-  }
-  .housing-title {
-    color: #ff6060;
-    font-size: 30px;
-  }
-  
-  .housing-location {
-    color: #ff6060;
-    margin-top: 5px;
-    font-weight: 500;
-  }
-  
+  max-width: 95%;
+  margin: 0 100px;
+  position: relative;
+}
+
+.housing-header {
+  display: flex;
+  justify-content: space-between;
+  margin: 25px 0;
+}
+
+.housing-error {
+  color: $kasacolor;
+  font-size: 40px;
+  font-weight: 500;
+  width: 100%;
+  position: absolute;
+  top: 200%;
+  text-align: center;
+}
+
+.housing-title {
+  color: $kasacolor;
+  font-size: $housing-title-font-size;
+}
+
+.housing-location {
+  color: $kasacolor;
+  margin-top: $housing-location-margin-top;
+  font-weight: $housing-location-font-weight;
+}
+
+.housing-collapse {
+  display: flex;
+  width: 100%;
+  gap: $housing-collapse-gap;
+}
+
+.collapse {
+  width: $collapse-width;
+  margin-bottom: $collapse-margin-bottom;
+}
+
+.equipments-content {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+@media (max-width: 768px) {
   .housing-collapse {
-    display: flex;
-    width: 100%;
-    gap: 2rem;
-  }
-  
-  .collapse {
-    width: 50%;
-    margin-bottom: 40px;
-  }
-  
-  .equipments-content {
-    display: flex;
     flex-direction: column;
-    list-style: none;
+    gap: 0;
   }
+
+  .collapse {
+    width: 90%;
+  }
+
+  .housing-header {
+    flex-direction: column;
+  }
+
+  .ownerInfo {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .rating {
+    height: 50%;
+    margin-top: 20px;
+  }
+}

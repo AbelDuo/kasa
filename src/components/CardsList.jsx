@@ -1,7 +1,7 @@
 
 import Cards from "./Cards";
 import ItemsData from "../data.json";
-import "../styles/CardsList.css";
+import "../styles/CardsList.scss";
 
 const CardsList = () => {
 
