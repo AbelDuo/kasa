@@ -2,12 +2,12 @@ import React, { useEffect, useState } from "react";
 import ItemsData from "../data.json";
 import { useParams } from "react-router-dom";
 import "../styles/Logement.scss";
-import Header from "../components/Header";
-import Slideshow from "../components/Slideshow";
-import Tags from "../components/Tags";
-import Host from "../components/Host";
-import Collapse from "../components/Collapse";
-import Footer from "../components/Footer";
+import Header from "../components/Header/Header";
+import Slideshow from "../components/Slideshow/Slideshow";
+import Tags from "../components/Tags/Tags";
+import Host from "../components/Host/Host";
+import Collapse from "../components/Collapse/Collapse";
+import Footer from "../components/Footer/Footer";
 import Erreur from "../pages/Erreur";
 
 const Logement = () => {
@@ -52,8 +52,8 @@ const Logement = () => {
           </Collapse>
           <Collapse title="Équipements">
             <ul className="equipments-content">
-              {equipments.map((equipment) => {
-                return <li>{equipment}</li>;
+              {equipments.map((equipment,index) => {
+                return <li key={index}>{equipment}</li>;
               })}
             </ul>
           </Collapse>

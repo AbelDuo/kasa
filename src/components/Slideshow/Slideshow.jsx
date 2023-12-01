@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import arrowNext from "../assets/images/arrow_forward.png";
-import arrowPrev from "../assets/images/arrow_back.png";
-import "../styles/Slideshow.scss";
+import arrowNext from "../../assets/images/arrow_forward.png";
+import arrowPrev from "../../assets/images/arrow_back.png";
+import "../Slideshow/Slideshow.scss";
 
 
 const Slideshow = ({ images }) => {

@@ -1,6 +1,6 @@
 import React from "react";
-import LogoBlanc from "../assets/images/LOGO_blanc.png";
-import "../styles/Footer.scss";
+import LogoBlanc from "../../assets/images/LOGO_blanc.png";
+import "../Footer/Footer.scss";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();

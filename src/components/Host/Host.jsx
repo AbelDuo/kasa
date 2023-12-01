@@ -1,6 +1,6 @@
-import starActive from "../assets/images/star-active.png";
-import starInactive from "../assets/images/star-inactive.png";
-import "../styles/Host.scss";
+import starActive from "../../assets/images/star-active.png";
+import starInactive from "../../assets/images/star-inactive.png";
+import "../Host/Host.scss";
 
 const Host =  ({rating, firstName, lastName, picture}) => {
     const starArray = Array(5).fill(null); //initialisation d'un array de 5 elements nuls

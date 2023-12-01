@@ -1,7 +1,7 @@
 
-import Cards from "./Cards";
-import ItemsData from "../data.json";
-import "../styles/CardsList.scss";
+import Cards from "../Cards/Cards.jsx";
+import ItemsData from "../../data.json";
+import "../CardsList/CardsList.scss";
 
 const CardsList = () => {
 

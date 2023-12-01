@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
-import Header from "../components/Header";
-import Banner from "../components/Banner";
+import Header from "../components/Header/Header";
+import Banner from "../components/Banner/Banner";
 import aboutBanner from "../assets/images/aproposIMG.png";
-import Collapse from "../components/Collapse";
+import Collapse from "../components/Collapse/Collapse";
 import collapsesData from "../collapsesData.json";
-import Footer from "../components/Footer";
+import Footer from "../components/Footer/Footer";
 
 const Apropos = () => {
   const [info, setInfo] = useState([]);

@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/Cards.scss";
+import "../Cards/Cards.scss";
 import { Link } from "react-router-dom";
 
 const Cards = ({ item }) => {
