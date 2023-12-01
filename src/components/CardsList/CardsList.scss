@@ -11,3 +11,10 @@
     border-radius: 25px;
     background-color: #f6f6f6;
   }
+
+
+  @media (max-width:768px){
+    .cards-container{
+      padding: 25px 10px;
+    }
+  }

@@ -2,12 +2,11 @@ $header-color: #ff6060;
 
 .nav {
   display: flex;
-  max-width: 1480px;
+  max-width: 83%;
   height: 68px;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 720px;
-  margin: 40px 100px;
+  margin: 40px 0px;
 
 
 
@@ -35,13 +34,13 @@ $header-color: #ff6060;
 
 @media (max-width:768px){
   .nav{
-    gap: 0px;
     justify-content: space-between;
+    max-width: 100%;
   
     & .links{
       gap:40px;
       & a {
-        font-size:21px;
+        font-size:17px;
       }
     }
   }

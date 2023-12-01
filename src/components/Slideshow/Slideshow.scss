@@ -49,3 +49,9 @@
     font-weight: 600;
     color: #fff;
   }
+  @media (max-width:768px){
+    .slide-controls{
+      height:15%;
+      top:45%;
+    }
+  }
