@@ -15,7 +15,7 @@ const Collapse = ({ title, children }) => {
         {title}
         <img src={icon} className={`collapse-icon ${isOpen ? 'rotate' : ''}`} alt="collapse icon" />
       </button>
-      {isOpen && <div className="collapse-content">{children}</div>}
+      <div className="collapse-content">{children}</div>
     </div>
   );
 };

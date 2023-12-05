@@ -5,7 +5,8 @@ import "../Header/Header.scss";
 const Header = () => {
   return (
     <header className="nav">
-      <img src={Logo} alt="" />
+      <NavLink className="Logo" to="/"><img src={Logo} alt="" />
+      </NavLink>
       <ul className="links">
         <NavLink to="/">
           <li>Accueil</li>
